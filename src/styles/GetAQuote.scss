@@ -1,0 +1,125 @@
+@import 'main';
+
+.getAQuote{
+    background-color: $background;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 10vh;
+    }
+
+    h4{
+        font-family: Montserrat;
+        color: $primary;
+        font-weight: 600;
+        font-size: 2.9vw;
+        padding-bottom: 10vh;
+        width: 50%;
+
+        @media (max-width: 1200px){
+            font-size: 3.4vw;
+        }
+        @media (max-width: 1024px){
+            width: 80%;
+            padding-bottom: 2vh;
+            font-size: 5vw;
+        }
+        @media (max-width: 768px) {
+            font-size: 6vw;
+        }
+
+        span{
+            color: $secondary;
+        }
+    }
+
+    form{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 1024px) {
+            width: 80%;
+        }
+
+        input, textarea{
+            -webkit-appearance: none;
+        }
+
+        input{
+            font-size: 1vw;
+            font-family: Plus Jakarta Sans;
+            text-indent: 1vw;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid $primary;
+            width: calc(100% - 2px);
+            height: 5vh;
+            color: grey;
+            margin: 1vh 0;
+
+            @media (max-width: 1200px){
+                font-size: 1.6vw;
+            }
+            @media (max-width: 768px) {
+                font-size: 2.4vw;
+            }
+        }
+        
+        textarea{
+            width: calc(100% - 2vw - 2px);
+            height: 15vh;
+            font-size: 1vw;
+            font-family: Plus Jakarta Sans;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid $primary;
+            position: relative;
+            padding: 1vh 1vw;
+            resize: none;
+            color: grey;
+            margin: 1vh 0;
+
+            @media (max-width: 1200px){
+                font-size: 2vw;
+            }
+            @media (max-width: 768px) {
+                font-size: 3vw;
+            }
+        }
+
+        #submitButton{
+            background-color: $secondary;
+            color: $primary;
+            border: none;
+            transition: 200ms;
+            margin-left: auto;
+            height: 55px;
+            width: 240px;
+            background-color: $secondary;
+            color: $primary;
+            font-family: Plus Jakarta Sans;
+            font-size: 20px;
+            font-weight: 500;
+            border-radius: 10px;
+            text-indent: 0;
+
+            @media (max-width: 1200px){
+                height: 40px;
+                width: 180px;
+                font-size: 14px;
+            }
+
+            &:hover{
+                background-color: $primary;
+                color: $secondary;
+                cursor: pointer;
+            }
+        }
+    }
+}

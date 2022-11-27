@@ -1,0 +1,255 @@
+@import 'main';
+
+.focusServices{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $background;
+    position: relative;
+
+    .webDesign{
+
+        & > div{
+            margin: 6vh 0;
+
+            h4{
+                text-align: center;
+            }
+
+            a{
+                height: 55px;
+                width: 240px;
+                background-color: $backgroundVariant;
+                color: $primary;
+                font-family: Plus Jakarta Sans;
+                font-size: 18px;
+                font-weight: 500;
+                border-radius: 10px;
+                margin-top: 4vh;
+                margin-left: 18vw;
+                border: none;
+                position: relative;
+                text-decoration: none;
+                text-align: center;
+                line-height: 55px;
+                display: block;
+                overflow: hidden;
+
+                @media (max-width: 1200px){
+                    height: 40px;
+                    width: 180px;
+                    font-size: 14px;
+                    line-height: 40px;
+                    margin-top: 3vh;
+                }
+                @media (max-width: 600px){
+                    height: 35px;
+                    width: 160px;
+                    line-height: 35px;
+                    font-size: 12px;
+                }
+                
+                span{
+                    position: relative;
+                    z-index: 1;
+                }
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 100%;
+                    border-radius: 10px;
+                    background-color: $secondary;
+                    transition: 300ms;
+                }
+
+                &:hover{
+                    cursor: pointer;
+
+                    &::after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .hostingPackage{
+        
+        @media (max-width: 768px) {
+            flex-direction: column-reverse;
+        }
+
+        & > .gatsby-image-wrapper{
+
+            @media (max-width: 768px) {
+                width: 90%;
+                margin-top: 10vh;
+                padding-top: 10vh;
+            }
+        }
+
+        & > div{
+
+            & > div{
+                width: 70%;
+                padding-left: 20%;
+                padding-top: 4vh;
+
+                p{
+                    padding: 0;
+                    text-indent: 0;
+                    font-size: 1.3vw;
+                    color: $secondary;
+                    font-weight: 600;
+                    padding-bottom: 0.7vh;
+
+                    @media (max-width: 1200px){
+                        font-size: 2vw;
+                    }
+                    @media (max-width: 768px) {
+                        font-size: 3vw;
+                    }
+                }
+
+                ul{
+                    list-style: none;
+
+                    li{
+                        padding: .5vh;
+                        display: flex;
+                        align-items: center;
+                        font-family: Montserrat;
+                        color: $primary;
+                        font-weight: 500;
+                        font-size: 1vw;
+
+                        @media (max-width: 1200px){
+                            font-size: 1.8vw;
+                        }
+                        @media (max-width: 768px) {
+                            font-size: 2.7vw;
+                        }
+
+                        .gatsby-image-wrapper {
+                            height: 24px;
+                            width: 24px;
+                            margin-right: 10px;
+
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .websiteBenefits{
+
+        & > .gatsby-image-wrapper{
+
+            @media (max-width: 768px) {
+                margin-top: 5vh;
+            }
+        }
+
+        & > div{
+            padding-top: 6vh;
+
+            h4{
+                text-indent: -3vw;
+                margin-left: 1vw;
+                width: 90%;
+                padding: 0 5%;
+            }
+
+            p{
+                padding-top: 2vh;
+            }
+        }
+    }
+
+    & > div{
+        width: 70%;
+        height: 30%;
+        display: flex;
+        padding: 8vh 0;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            height: auto;
+            width: 80%;
+        }
+        
+        .serviceInfo{
+            width: 60%;
+
+            @media (max-width: 768px) {
+                width: 90%;
+            }
+
+            h4{
+                font-family: Montserrat;
+                color: $secondary;
+                font-weight: 700;
+                font-size: 2vw;
+                padding-bottom: 1vh;
+
+                @media (max-width: 1200px){
+                    font-size: 3vw;
+                }
+                @media (max-width: 768px) {
+                    font-size: 5vw;
+                }
+                @media (max-width: 600px) {
+                    text-align: center;
+                }
+            }
+
+            p{
+                padding: 0 5%;
+                width: 90%;
+                font-family: Montserrat;
+                color: $primary;
+                font-weight: 500;
+                font-size: 1vw;
+                text-indent: 2vw;
+
+                @media (max-width: 1200px){
+                    font-size: 2vw;
+                }
+                @media (max-width: 768px) {
+                    font-size: 3vw;
+                }
+            }
+
+            & > p{
+
+                @media (max-width: 600px) {
+                    text-align: center;
+                }
+            }
+        }
+
+        & > .gatsby-image-wrapper{
+            width: 40%;
+
+            @media (max-width: 768px) {
+                width: 90%;
+            }
+
+            & > img{
+                width: 100%;
+                padding: 3vh 0;
+            }
+        }
+    }
+}

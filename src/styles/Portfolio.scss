@@ -1,0 +1,247 @@
+@import 'main';
+
+.portfolio{
+    height: auto;
+    background-color: $background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+
+    h2{
+        font-family: Montserrat;
+        color: $secondary;
+        font-weight: 700;
+        font-size: 4vw;
+        text-align: center;
+        padding: 10vh 0;
+
+        @media (max-width: 1200px){
+            font-size: 6vw;
+            padding: 6vh 0;
+        }
+        @media (max-width: 768px) {
+            font-size: 10vw;
+            padding: 4vh 0;
+        }
+    }
+
+    .professionalRestaurantContainer{
+        width: 90%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+
+        div{
+            width: 100%;
+
+            img{
+                width: 100%;
+                border-radius: 20px;
+    
+                @media (max-width: 1200px){
+                    border-radius: 15px;
+                }
+                @media (max-width: 768px) {
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .desktopHero{
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+            @media (max-width: 1000px){
+                grid-column-end: 5;
+            }
+        }
+
+        .phoneMenu{
+            grid-column-start: 4;
+            grid-column-end: 5;
+
+            @media (max-width: 1000px){
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        }
+
+        .tabletSlider{
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+            @media (min-width: 1200px){
+                grid-row-start: 2;
+                grid-row-end: 4;
+            }
+
+            @media (max-width: 1000px){
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+        }
+
+        .professionalRestaurantInfo{
+            height: 100%;
+            width: 100%;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            @media (max-width: 1000px){
+                grid-column-start: 3;
+                grid-column-end: 5;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+
+            h6{
+                font-family: Montserrat;
+                color: $primary;
+                font-weight: 700;
+                font-size: 2.4vw;
+                text-align: center;
+                margin-bottom: 3vh;
+    
+                @media (max-width: 1200px){
+                    font-size: 3.5vw;
+                }
+                @media (max-width: 768px) {
+                    font-size: 4vw;
+                }
+            }
+
+            p{
+                width: 90%;
+                font-family: Montserrat;
+                color: $primary;
+                font-weight: 500;
+                font-size: 1.3vw;
+                text-align: center;
+                margin: 0 5%;
+
+                @media (max-width: 1200px){
+                    font-size: 2vw;
+                }
+                @media (max-width: 768px) {
+                    font-size: 3vw;
+                }
+            }
+
+            a{
+                height: 55px;
+                width: 240px;
+                background-color: $backgroundVariant;
+                color: $primary;
+                font-family: Plus Jakarta Sans;
+                font-size: 18px;
+                font-weight: 500;
+                border-radius: 10px;
+                margin-top: 4vh;
+                margin-left: 0 auto;
+                border: none;
+                position: relative;
+                text-decoration: none;
+                text-align: center;
+                line-height: 55px;
+                display: block;
+                overflow: hidden;
+
+                @media (max-width: 1200px){
+                    height: 40px;
+                    width: 180px;
+                    font-size: 14px;
+                    line-height: 40px;
+                    margin-top: 3vh;
+                }
+                @media (max-width: 600px){
+                    height: 30px;
+                    width: 120px;
+                    line-height: 30px;
+                    font-size: 10px;
+                }
+                
+                span{
+                    position: relative;
+                    z-index: 1;
+                }
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 0;
+                    border-radius: 10px;
+                    background-color: $secondary;
+                    transition: 300ms;
+                }
+
+                &:hover{
+                    cursor: pointer;
+
+                    &::after{
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .desktopContact{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            height: auto;
+            margin-top: auto;
+
+            @media (max-width: 1200px){
+                grid-column-start: 1;
+            }
+        }
+
+        .desktopSlider{
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+            @media (max-width: 1000px){
+                grid-column-end: 5;
+            }
+        }
+
+        .phoneHero{
+
+            @media (max-width: 1000px){
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        }
+
+        .phoneCards{
+
+            @media (max-width: 1000px){
+                grid-column-start: 3;
+                grid-column-end: 5;
+            }
+        }
+
+        .desktopMenu{
+            grid-column-start: 2;
+            grid-column-end: 5;
+
+            @media (max-width: 1000px){
+                grid-column-start: 1;
+            }
+        }
+
+        .desktopCTA{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    }
+
+}

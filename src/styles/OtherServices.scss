@@ -1,0 +1,114 @@
+@import 'main';
+
+.otherServicesContainer{
+    background-color: $background;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10vh;
+
+    @media (max-width: 768px) {
+        height: auto;
+        padding-bottom: 10vh;
+    }
+
+    h5{
+        font-family: Montserrat;
+        color: $secondary;
+        font-weight: 700;
+        font-size: 2.5vw;
+
+        @media (max-width: 1200px){
+            font-size: 4vw;
+        }
+        @media (max-width: 768px) {
+            font-size: 5vw;
+        }
+    }
+
+    .otherServices{
+        width: 70%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3vh;
+        padding: 5vh;
+
+        @media (max-width: 1200px){
+            width: 90%;
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+
+        & > div{
+            background-color: $backgroundVariant;
+            border-radius: 20px;
+            display: flex;
+            position: relative;
+            height: 25vh;
+
+            .gatsby-image-wrapper{
+                width: 24%;
+                height: 100%;
+                margin: 0 8%;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                    margin: auto;
+                }
+            }
+
+            .serviceInfo{
+                height: calc(100% - 4vh);
+                width: 50%;
+                padding: 2vh 5%;
+                position: relative;
+
+                &::before{
+                    content: '';
+                    height: 80%;
+                    width: 2px;
+                    background-color: #2e2d3d;
+                    position: absolute;
+                    left: 0;
+                    top: 10%;
+                }
+
+                h6{
+                    font-family: Montserrat;
+                    color: $secondary;
+                    font-weight: 700;
+                    font-size: 1.2vw;
+                    text-align: center;
+
+                    @media (max-width: 1200px){
+                        font-size: 2.4vw;
+                    }
+                    @media (max-width: 768px) {
+                        font-size: 3.9vw;
+                    }
+                }
+
+                p{
+                    padding: 2vh 0;
+                    width: 100%;
+                    font-family: Montserrat;
+                    color: $primary;
+                    font-weight: 500;
+                    font-size: 1vw;
+                    text-align: center;
+
+                    @media (max-width: 1200px){
+                        font-size: 1.4vw;
+                    }
+                    @media (max-width: 768px) {
+                        font-size: 3vw;
+                    }
+                }
+            }
+        }
+    }
+}

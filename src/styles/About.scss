@@ -1,0 +1,163 @@
+@import 'main';
+
+.about{
+    background-color: $background;
+    height: auto;
+    width: 100%;
+    padding: 10vh 0;
+
+    @media (max-width: 1200px){
+        padding-top: 0;
+    }
+
+    .aboutMe{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 7vh;
+
+        @media (max-width: 1200px){
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .aboutMeInfo{
+            width: 50%;
+            height: 100%;  
+            
+            @media (max-width: 1200px){
+                width: 90%;
+            }
+
+            h6{
+                font-family: Montserrat;
+                color: $secondary;
+                font-weight: 700;
+                font-size: 3.7vw;
+                margin-bottom: 2vh;
+                text-align: center;
+                padding: 4vh 0;
+    
+                @media (max-width: 1200px){
+                    font-size: 6.5vw;
+                }
+                @media (max-width: 768px) {
+                    font-size: 8.4vw;
+                }
+            }
+
+            p{
+                width: 95%;
+                font-family: Montserrat;
+                color: $primary;
+                font-weight: 500;
+                font-size: 1.2vw;
+                text-align: center;
+                margin: auto;
+                margin-bottom: 5vh;
+
+                @media (max-width: 1200px){
+                    font-size: 1.8vw;
+                }
+                @media (max-width: 768px) {
+                    font-size: 2.5vw;
+                }
+                @media (max-width: 470px) {
+                    margin-bottom: 4vh;
+                    margin-top: 3vh;
+                    width: 100%;
+                    font-size: 3.4vw;
+                }
+            }
+        }
+
+        .gatsby-image-wrapper{
+            width: 40%;
+
+            img{
+                width: 100%;
+                border-radius: 20px;
+    
+                @media (max-width: 1200px){
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    .technology{
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @media (max-width: 1200px){
+            height: auto;
+        }
+        
+        .technologyInfo{
+            
+            h6{
+                font-family: Montserrat;
+                color: $secondary;
+                font-weight: 700;
+                font-size: 2.7vw;
+                margin-bottom: 2vh;
+                text-align: center;
+    
+                @media (max-width: 1200px){
+                    font-size: 3.5vw;
+                }
+                @media (max-width: 768px) {
+                    font-size: 4.4vw;
+                }
+            }
+
+            p{
+                width: 60%;
+                font-family: Montserrat;
+                color: $primary;
+                font-weight: 500;
+                font-size: 1.4vw;
+                text-align: center;
+                margin: auto;
+                margin-bottom: 5vh;
+
+                @media (max-width: 1200px){
+                    font-size: 2vw;
+                    width: 70%;
+                }
+                @media (max-width: 768px) {
+                    font-size: 2.5vw;
+                    width: 90%;
+                }
+                @media (max-width: 470px) {
+                    font-size: 3vw;
+                }
+            }
+        }
+
+        .technologyImgs{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width: 1200px){
+                width: 70%;
+            }
+            @media (max-width: 768px) {
+                width: 90%;
+            }
+
+            .gatsby-image-wrapper{
+                width: 15%;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

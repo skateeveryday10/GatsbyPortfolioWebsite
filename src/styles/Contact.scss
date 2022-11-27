@@ -1,0 +1,328 @@
+@import 'main';
+
+.contact{
+    height: 90vh;
+    display: flex;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contactInformation{
+        background-color: $backgroundVariant2;
+        width: 60%;
+        height: 100%;
+
+        @media (max-width: 1200px){
+            width: 50%;
+        }
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+
+        h5{
+            font-family: Montserrat;
+            color: $primary;
+            font-weight: 700;
+            font-size: 2.8vw;
+            text-align: center;
+            padding: 5vh 0;
+
+            @media (max-width: 1200px){
+                font-size: 3.4vw;
+            }
+            @media (max-width: 768px) {
+                font-size: 6vw;
+            }
+            @media (max-width: 470px) {
+                font-size: 8vw;
+            }
+        }
+
+        & > p{
+            width: 80%;
+            padding: 0 10%;
+            font-family: Montserrat;
+            color: $primary;
+            font-weight: 500;
+            font-size: 1vw;
+            text-indent: 2vw;
+
+            @media (max-width: 1200px){
+                font-size: 2vw;
+            }
+            @media (max-width: 768px) {
+                font-size: 3vw;
+            }
+            @media (max-width: 470px) {
+                font-size: 3.8vw;
+            }
+        }
+
+        .otherFormsOfContactContainer{
+            margin-left: 45%;
+            margin-top: 5%;
+            width: 45%;
+
+            @media (max-width: 1200px){
+                margin-left: 7.5%;
+                width: 85%;
+            }
+            @media (max-width: 1024px) {
+                width: 50%;
+                margin-left: 40%;
+                margin-bottom: 5vh;
+            }
+            @media (max-width: 768px) {
+                margin-left: 12.5%;
+                width: 75%;
+            }
+
+            h6{
+                font-family: Montserrat;
+                color: $primary;
+                font-weight: 700;
+                font-size: 1.7vw;
+                margin-bottom: 2vh;
+                text-align: center;
+    
+                @media (max-width: 1200px){
+                    font-size: 2.5vw;
+                }
+                @media (max-width: 768px) {
+                    font-size: 3.4vw;
+                }
+            }
+
+            .otherFormsOfContact{
+                display: flex;
+                justify-content: space-between;
+
+                .right{
+                    p{
+                        text-align: right;
+                    }
+                }
+
+                p{
+                    width: auto;
+                    font-family: Montserrat;
+                    color: $primary;
+                    font-weight: 500;
+                    font-size: 1vw;
+                    padding: 0.2vh 0;
+    
+                    @media (max-width: 1200px){
+                        font-size: 1.7vw;
+                    }
+                    @media (max-width: 768px) {
+                        font-size: 3vw;
+                    }
+                }
+            }
+        }
+    }
+
+    .contactFormContainer{
+        background-color: $backgroundVariant;
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 29px 0px inset;
+
+        @media (max-width: 1200px){
+            width: 50%;
+        }
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+
+        .contactForm{
+            width: 70%;
+            background-color: $backgroundVariant2;
+            border-radius: 20px;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 29px 0px;
+            margin: 8vh 0;
+
+            @media (max-width: 1200px) and (min-width: 1024px){
+                width: 80%;
+            }
+            @media (max-width: 768px) {
+                width: 90%;
+            }
+
+            h6{
+               font-family: Montserrat;
+               color: $secondary;
+               font-weight: 700;
+               font-size: 1.8vw;
+               text-align: center;
+               padding: 3vh 0;
+
+               @media (max-width: 1200px){
+                   font-size: 2.4vw;
+               }
+               @media (max-width: 768px) {
+                   font-size: 4vw;
+               }
+               @media (max-width: 470px) {
+                    font-size: 6vw;
+               }
+            }
+
+            form{
+                width: 100%;
+                margin-bottom: 1.5vh;
+
+                input, select, textarea{
+                    font-size: 1vw;
+                    font-family: Plus Jakarta Sans;
+                    border: 1px solid $primary;
+                    border-radius: 5px;
+                    outline: none;
+                    color: grey;
+                    background-color: $primary;
+                    -webkit-appearance: none;
+                    
+                    @media (max-width: 1200px){
+                        font-size: 1.6vw;
+                    }
+                    @media (max-width: 768px) {
+                        font-size: 2.4vw;
+                    }
+                    @media (max-width: 470px) {
+                        font-size: 3.6vw;
+                    }
+                }
+
+                input, select{
+                    height: 5vh;
+
+                    @media (max-height: 800px){
+                        height: 7vh;
+                    }
+                }
+
+                input{
+                    text-indent: 1vw;
+                    width: calc(90% - 2px);
+                }
+
+                .nameInputs{
+                    margin: 0 5%;
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+
+                    input{
+                        width: 48%;
+                    }
+                }
+
+                #emailInput{
+                    margin: 3% 5%;
+                }
+
+                select{
+                    width: 90%;
+                    margin: 0 5%;
+                    text-indent: 0.7vw;
+                }
+
+                textarea{
+                    width: calc(90% - 2vw - 2px);
+                    height: 30vh;
+                    margin: 3% 5%;
+                    position: relative;
+                    padding: 1.5vh 1vw;
+                    resize: none;
+                }
+
+                #submitButton{
+                    background-color: $secondary;
+                    color: $primary;
+                    border: none;
+                    transition: 200ms;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: 5%;
+                    height: 55px;
+                    width: 240px;
+                    background-color: $secondary;
+                    color: $primary;
+                    font-family: Plus Jakarta Sans;
+                    font-size: 20px;
+                    font-weight: 500;
+                    border-radius: 10px;
+                    text-indent: 0;
+        
+                    @media (max-width: 1200px){
+                        height: 40px;
+                        width: 180px;
+                        font-size: 14px;
+                    }
+        
+                    &:hover{
+                        background-color: $primary;
+                        color: $secondary;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .submitMessage{
+                height: 75vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                .gatsby-image-wrapper{
+                    width: 8vw;
+                    margin-bottom: 2vh;
+
+                    @media (max-width: 1200px){
+                        width: 13vw;
+                    }
+                    @media (max-width: 768px) {
+                        width: 18vw;
+                    }
+                    @media (max-width: 470px) {
+                        width: 22vw;
+                    }
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                p{
+                    width: 75%;
+                    padding: 0 10%;
+                    font-family: Montserrat;
+                    color: $primary;
+                    font-weight: 500;
+                    font-size: 0.9vw;
+                    text-align: center;
+        
+                    @media (max-width: 1200px){
+                        font-size: 1.7vw;
+                    }
+                    @media (max-width: 768px) {
+                        font-size: 2.6vw;
+                    }
+                    @media (max-width: 470px) {
+                        font-size: 3.4vw;
+                    }
+                }
+            }
+        }
+    }
+}

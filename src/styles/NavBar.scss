@@ -1,0 +1,76 @@
+@import "main";
+
+.NavBar{
+    background-color: $background;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;  
+
+    a{
+        text-decoration: none;
+
+        h1{
+            padding-left: 1vw;
+            font-size: 3vw;
+            color: $primary;
+            font-family: Plus Jakarta Sans;
+            font-weight: 600;
+    
+            @media (max-width: 1200px){
+                font-size: 4vw;
+            }
+            @media (max-width: 768px) {
+                font-size: 5vw;
+            }
+        }
+
+    }
+
+    ul{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        font-size: 1.3vw;
+
+        @media (max-width: 1200px){
+            font-size: 1.8vw;
+        }
+        @media (max-width: 768px) {
+            font-size: 2.3vw;
+            width: 50%;
+        }
+
+        li{
+
+            a{
+                padding: 3vh .4vw;
+                text-decoration: none;
+                color: $primary;
+                font-family: Montserrat;
+                font-weight: 550;
+                position: relative;
+                transition: 200ms;
+        
+                &::after{
+                    content: '';
+                    background: $secondary;
+                    display: block;
+                    height: 0.15vw;
+                    width: 100%;
+                    transform: scaleX(0);
+                    transform-origin: bottom right;
+                    transition: transform 0.2s ease-in-out;
+                    position: absolute;
+                }
+        
+                &:hover::after{
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,159 @@
+@import 'main';
+
+.footerContainer{
+    height: 30vh;
+    width: 100%;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+
+    .footer{
+        height: 100%;
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        
+        @media (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        h6{
+            font-family: Montserrat;
+            color: black;
+            font-weight: 700;
+            font-size: 3vw;
+            text-align: center;
+            padding-bottom: 1vh;
+    
+            @media (max-width: 1200px){
+                font-size: 4vw;
+            }
+            @media (max-width: 768px) {
+                font-size: 5vw;
+            }
+            @media (max-width: 414px) {
+                font-size: 6vw;
+            }
+        }
+    
+        .basicInfoContainer{
+            height: auto;
+            
+            ul{
+                display: flex;
+                list-style-type: none;
+                justify-content: space-around;
+    
+                li{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    a{
+                        padding: .6vh .7vw;
+                        margin: .1vh .5vw;
+                        text-decoration: none;
+                        color: black;
+                        font-family: Montserrat;
+                        font-weight: 500;
+                        font-size: 1vw;
+            
+                        @media (max-width: 1200px){
+                            font-size: 1.6vw;
+                        }
+                        @media (max-width: 768px) {
+                            font-size: 2.7vw;
+                        }
+                        @media (max-width: 414px) {
+                            font-size: 3.4vw;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .socialMediaContainer{
+    
+            p{
+                color: black;
+                font-family: Montserrat;
+                font-weight: 500;
+                font-size: 1vw;
+                padding-left: .7vw;
+    
+                @media (max-width: 1200px){
+                    font-size: 1.5vw;
+                }
+                @media (max-width: 768px) {
+                    font-size: 2vw;
+                    margin-top: 2vh;
+                }
+                @media (max-width: 414px) {
+                    font-size: 3vw;
+                }
+            }
+    
+            .socialMedia{
+                height: auto;
+                display: flex;
+                justify-content: center;
+
+                @media (max-width: 768px) {
+                    margin-bottom: 2vh;
+                }
+        
+                a{
+                    height: auto;
+        
+                    div{
+                        width: 3vw;
+                        margin: .7vw;
+
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        @media (max-width: 1200px){
+                            padding: .7vw;
+                            width: 4vw;
+                        }
+                        @media (max-width: 768px) {
+                            padding: .7vw;
+                            width: 6vw;
+                        }
+                        @media (max-width: 414px) {
+                            width: 8vw;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .legalContainer{
+            height: auto;
+            position: absolute;
+            bottom: 1.5vh;
+            
+            p, a{
+                color: black;
+                font-family: Montserrat;
+                font-weight: 500;
+                font-size: .7vw;
+    
+                @media (max-width: 1200px){
+                    font-size: 1.3vw;
+                }
+                @media (max-width: 768px) {
+                    font-size: 2vw;
+                }
+                @media (max-width: 414px) {
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+}
