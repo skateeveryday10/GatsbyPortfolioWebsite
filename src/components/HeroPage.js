@@ -20,7 +20,7 @@ const HeroPage = () => {
                 <p>Websites are becoming more important than ever for businesses. Get a quote for a cheap, high-quality website today.</p>
                 <Link to='/Contact'>Get a Free Quote!</Link>
             </div>
-            <StaticImage src='../imgs/heroImg.svg' alt='Main Website Design Image' placeholder='blurred' quality={100} />
+            <StaticImage src='../imgs/heroImg.png' alt='Main Website Design Image' placeholder='blurred' quality={100} />
         </div>
     );
 }

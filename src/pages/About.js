@@ -23,7 +23,7 @@ const About = () => {
                         <h2>About Me</h2>
                         <p>My name is Travis Falk and I am a professional web designer based in Connecticut. Web design is a large passion of mine and I have become entirely obsessed with not only the art of design, but also optimizing design to be effective for businesses. Falk Web Design is built around these qualities and my first priority for every project is to create a steady, long term, return for my client.</p>
                     </div>
-                    <StaticImage src='../imgs/professionalPhoto.jpeg' alt='Professional Head shot' placeholder='blurred' loading='eager' />
+                    <StaticImage src='../imgs/professionalPhoto.jpg' alt='Professional Head shot' placeholder='blurred' loading='eager' />
                 </div>
                 <div className="technology">
                     <div className="technologyInfo">
