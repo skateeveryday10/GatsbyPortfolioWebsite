@@ -4,6 +4,16 @@ import Layout from "../components/Layout";
 import emailjs from '@emailjs/browser';
 import '../styles/Contact.scss';
 
+export const Head = () => {
+    return(
+        <>
+            <title>Falk Web Design</title>
+            <meta name='description' content='Effective Website Design and Development for Business and personal use, all at a cheap price!' />
+            <meta name='keywords' content='Web Website Design Designer Development Developer'/>
+        </>
+    );
+}
+
 const Contact = () => {
     const [isForm, setIsForm] = useState(true);
 
@@ -19,7 +29,7 @@ const Contact = () => {
 
         return(
             <div className="contactForm">
-                <h6>Contact form</h6>
+                <h3>Contact form</h3>
                 <form ref={form} onSubmit={handleSubmit}>
                     <div className="nameInputs">
                         <input type="text" name="firstName" placeholder='First Name' required />
@@ -64,10 +74,10 @@ const Contact = () => {
         <Layout>
             <div className="contact">
                 <div className="contactInformation">
-                    <h5>Contact me</h5>
+                    <h2>Contact me</h2>
                     <p>Reach out to get a quote, commission a website, or for any other general inquiries. Fill out the form with a short description and your email or give me a call, email, or text and I will get back to you within 48 hours.</p>
                     <div className="otherFormsOfContactContainer">
-                        <h6>Other forms of contact:</h6>
+                        <h3>Other forms of contact:</h3>
                         <div className="otherFormsOfContact">
                             <div>
                                 <p>Email:</p>

@@ -1,6 +1,15 @@
 import React from 'react'
 import Layout from '../components/Layout'
 
+export const Head = () => {
+  return(
+      <>
+          <title>Falk Web Design</title>
+          <meta name='robots' content='noindex' />
+      </>
+  );
+}
+
 export default function NotFound() {
   return (
     <Layout>

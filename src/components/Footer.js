@@ -5,10 +5,10 @@ import { StaticImage } from "gatsby-plugin-image";
 
 export default function Footer() {
   return (
-    <div className="footerContainer">
+    <footer className="footerContainer">
       <div className="footer">
         <div className="basicInfoContainer">
-            <h6>Falk Web Design</h6>
+            <h2>Falk Web Design</h2>
             <ul>
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/Portfolio'>Portfolio</Link></li>
@@ -30,6 +30,6 @@ export default function Footer() {
             <p><Link to='/PrivacyPolicy'>Privacy Policy</Link> | Copyright © 2022, Travis Falk</p>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }

@@ -2,6 +2,15 @@ import React from 'react';
 import '../styles/PrivacyPolicy.scss';
 import Layout from "../components/Layout";
 
+export const Head = () => {
+    return(
+        <>
+            <title>Falk Web Design</title>
+            <meta name='robots' content='noindex' />
+        </>
+    );
+}
+
 const PrivacyPolicy = () => {
 
     return(
