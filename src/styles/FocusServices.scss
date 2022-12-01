@@ -12,7 +12,18 @@
 
     .webDesign{
 
-        & > div{
+        @media (max-width: 1000px) {
+            margin-bottom: 10vh;
+        }
+
+        & > .gatsby-image-wrapper{
+
+            @media (max-width: 1000px) {
+                margin-top: 3vh;
+            }
+        }
+
+        .serviceInfo{
             margin: 6vh 0;
 
             h2{
@@ -82,20 +93,11 @@
     
     .hostingPackage{
         
-        @media (max-width: 768px) {
+        @media (max-width: 1000px) {
             flex-direction: column-reverse;
         }
 
-        & > .gatsby-image-wrapper{
-
-            @media (max-width: 768px) {
-                width: 90%;
-                margin-top: 10vh;
-                padding-top: 10vh;
-            }
-        }
-
-        & > div{
+        .serviceInfo{
 
             & > div{
                 width: 70%;
@@ -103,19 +105,12 @@
                 padding-top: 4vh;
 
                 p{
+                    @include text2;
                     padding: 0;
                     text-indent: 0;
-                    font-size: 1.3vw;
                     color: $secondary;
                     font-weight: 600;
                     padding-bottom: 0.7vh;
-
-                    @media (max-width: 1200px){
-                        font-size: 2vw;
-                    }
-                    @media (max-width: 768px) {
-                        font-size: 3vw;
-                    }
                 }
 
                 ul{
@@ -125,17 +120,7 @@
                         padding: .5vh;
                         display: flex;
                         align-items: center;
-                        font-family: Montserrat;
-                        color: $primary;
-                        font-weight: 500;
-                        font-size: 1vw;
-
-                        @media (max-width: 1200px){
-                            font-size: 1.8vw;
-                        }
-                        @media (max-width: 768px) {
-                            font-size: 2.7vw;
-                        }
+                        @include text1;
 
                         .gatsby-image-wrapper {
                             height: 24px;
@@ -154,15 +139,8 @@
 
     .websiteBenefits{
 
-        & > .gatsby-image-wrapper{
-
-            @media (max-width: 768px) {
-                margin-top: 5vh;
-            }
-        }
-
-        & > div{
-            padding-top: 6vh;
+        .serviceInfo{
+            margin-top: 6vh;
 
             h2{
                 text-indent: -3vw;
@@ -183,16 +161,18 @@
         display: flex;
         padding: 8vh 0;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
+            width: 85%;
+        }
+        @media (max-width: 1000px) {
             flex-direction: column;
             height: auto;
-            width: 80%;
         }
         
         .serviceInfo{
             width: 60%;
 
-            @media (max-width: 768px) {
+            @media (max-width: 1000px) {
                 width: 90%;
             }
 
@@ -217,38 +197,28 @@
             p{
                 padding: 0 5%;
                 width: 90%;
-                font-family: Montserrat;
-                color: $primary;
-                font-weight: 500;
-                font-size: 1vw;
                 text-indent: 2vw;
+                @include text1;
 
-                @media (max-width: 1200px){
-                    font-size: 2vw;
-                }
                 @media (max-width: 768px) {
-                    font-size: 3vw;
-                }
-            }
-
-            & > p{
-
-                @media (max-width: 600px) {
-                    text-align: center;
+                    font-size: 12px;
                 }
             }
         }
 
         & > .gatsby-image-wrapper{
             width: 40%;
+            margin-top: 10vh;
 
-            @media (max-width: 768px) {
-                width: 90%;
+            @media (max-width: 1000px) {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
             }
 
-            & > img{
+            img{
                 width: 100%;
-                padding: 3vh 0;
+                height: auto;
             }
         }
     }

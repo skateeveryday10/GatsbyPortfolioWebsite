@@ -19,6 +19,18 @@ module.exports = {
         icon: './src/imgs/FavIcon.png',
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-TELVE588ZM",
+        ],
+        pluginConfig: {
+          head: true,
+          exclude: ["/preview/**", "/do-not-track/me/too/"],
+        },
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

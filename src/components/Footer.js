@@ -19,11 +19,11 @@ export default function Footer() {
         <div className="socialMediaContainer">
             <p>Follow us</p>
             <div className="socialMedia">
-                <a href='https://www.instagram.com/'><StaticImage src='../imgs/Instagram.svg' alt='Instagram' placeholder='blurred' /></a>
-                <a href=''><StaticImage src='../imgs/TikTok.svg' alt='TikTok' placeholder='blurred' /></a>
-                <a href=''><StaticImage src='../imgs/Twitter.svg' alt='Twitter' placeholder='blurred' /></a>
-                <a href=''><StaticImage src='../imgs/Facebook.svg' alt='Facebook' placeholder='blurred' /></a>
-                <a href=''><StaticImage src='../imgs/Linkedin.svg' alt='Linkedin' placeholder='blurred' /></a>
+                <a href='https://www.instagram.com/'><StaticImage src='../imgs/Instagram.png' alt='Instagram' placeholder='blurred' /></a>
+                <a href=''><StaticImage src='../imgs/TikTok.png' alt='TikTok' placeholder='blurred' /></a>
+                <a href=''><StaticImage src='../imgs/Twitter.png' alt='Twitter' placeholder='blurred' /></a>
+                <a href=''><StaticImage src='../imgs/Facebook.png' alt='Facebook' placeholder='blurred' /></a>
+                <a href=''><StaticImage src='../imgs/Linkedin.png' alt='Linkedin' placeholder='blurred' /></a>
             </div>
         </div>
         <div className="legalContainer">

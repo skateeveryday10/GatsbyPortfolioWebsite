@@ -4,9 +4,37 @@ $secondary: #00a8e8;
 $background: #353535;
 $backgroundVariant: #3F3D56;
 $backgroundVariant2:#292929;
-@import url(https://fonts.googleapis.com/css?family=Montserrat|Plus+Jakarta+Sans|Caveat);
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Plus+Jakarta+Sans|Caveat&display=swap);
 
 *{
     margin: 0;
     padding: 0;
+}
+
+@mixin text1 {
+    font-family: Montserrat;
+    color: $primary;
+    font-weight: 500;
+    font-size: 20px;
+
+    @media (max-width: 1200px){
+        font-size: 18px;
+    }
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+@mixin text2 {
+    font-family: Montserrat;
+    color: $primary;
+    font-weight: 500;
+    font-size: 24px;
+
+    @media (max-width: 1200px){
+        font-size: 22px;
+    }
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
 }
