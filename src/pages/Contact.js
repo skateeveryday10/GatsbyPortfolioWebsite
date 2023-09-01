@@ -21,7 +21,12 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_k8lwgll', 'template_1cbqcrt', form.current, 'jNY0lGrNxSb3KUch9');
+        emailjs.sendForm('service_k8lwgll', 'template_1cbqcrt', {
+            name: form.current.firstName.value + form.current.lastName.value,
+            email: form.current.email.value,
+            reason: form.current.reason.value,
+            description: form.current.description.value,
+        }, "jNY0lGrNxSb3KUch9");
         setIsForm(false);
     }
 

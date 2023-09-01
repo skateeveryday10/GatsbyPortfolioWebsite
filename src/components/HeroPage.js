@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/HeroPage.scss';
+import Canvas from './Canvas'
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image";
 import { Typewriter } from 'react-simple-typewriter';

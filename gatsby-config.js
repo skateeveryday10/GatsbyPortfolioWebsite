@@ -7,6 +7,12 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: 'Falk Web Design',
@@ -31,6 +37,7 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-webpack-bundle-analyser-v2`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

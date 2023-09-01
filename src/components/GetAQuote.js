@@ -3,12 +3,16 @@ import emailjs from '@emailjs/browser';
 import '../styles/GetAQuote.scss';
 
 const GetAQuote = () => {
-
     const form = useRef();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_k8lwgll', 'template_ssridh6', form.current, 'jNY0lGrNxSb3KUch9');
+        emailjs.sendForm('service_k8lwgll', 'template_1cbqcrt', {
+            name: form.current.name.value,
+            email: form.current.email.value,
+            reason: "No Reason",
+            description: form.current.description.value,
+        }, "jNY0lGrNxSb3KUch9");
     }
 
     return(

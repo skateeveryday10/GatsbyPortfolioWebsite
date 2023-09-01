@@ -27,7 +27,7 @@ export default function Footer() {
             </div>
         </div>
         <div className="legalContainer">
-            <p><Link to='/PrivacyPolicy'>Privacy Policy</Link> | Copyright © 2022, Travis Falk</p>
+            <p><Link to='/PrivacyPolicy'>Privacy Policy</Link> | Copyright © 2023, Travis Falk</p>
         </div>
       </div>
     </footer>

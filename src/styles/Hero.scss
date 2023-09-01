@@ -1,0 +1,178 @@
+@import 'main';
+
+.Hero{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+
+    .NavBarContainer{
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+        position: absolute;
+
+        a{
+            text-decoration: none;
+
+            h1{
+                padding-left: 1vw;
+                color: $primary;
+                font-family: Plus Jakarta Sans;
+                font-weight: 600;
+                font-size: calc(48px + 0.390625vw);
+            }
+
+        }
+
+        ul{
+            width: 35%;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            font-size: calc(14px + 0.390625vw);
+            padding-top: 1vh;
+
+            li{
+
+                a{
+                    padding: 2vh .3vw;
+                    text-decoration: none;
+                    color: $primary;
+                    font-family: Montserrat;
+                    font-weight: 500;
+                    position: relative;
+                    transition: 200ms;
+            
+                    &::after{
+                        content: '';
+                        background: $secondary;
+                        display: block;
+                        height: 0.15vw;
+                        width: 100%;
+                        transform: scaleX(0);
+                        transform-origin: bottom right;
+                        transition: transform 0.2s ease-in-out;
+                        position: absolute;
+                    }
+            
+                    &:hover::after{
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                    }
+                }
+            }
+        }
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .heroHookContainer{
+        width: 40%;
+        top: 25%;
+        left: 3%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 2%;
+        position: absolute;
+
+        h2{
+            font-family: Montserrat;
+            color: white;
+            font-weight: 800;
+            font-size: 3vw;
+            padding-bottom: 1vh;
+            line-height: 6vh;
+            
+
+            @media (max-width: 1200px){
+                font-size: 4vw;
+            }
+            @media (max-width: 768px) {
+                font-size: 5vw;
+            }
+            @media (max-width: 500px) {
+                font-size: 7vw;
+            }
+
+            span{
+                color: $secondary;
+            }
+
+            .typed-cursor{
+                color: white;
+            }
+        }
+    
+        p{
+            text-indent: 2vw;
+            @include text2;
+        }
+
+        a{
+            height: 55px;
+            width: 240px;
+            background-color: $secondary;
+            color: $primary;
+            font-family: Plus Jakarta Sans;
+            font-size: 20px;
+            line-height: 55px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 10px;
+            margin: 3vh auto ;
+            border: 2px solid $secondary;
+            box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+            transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+            display: block;
+            -webkit-appearance: none;
+
+            @media (max-width: 1200px){
+                height: 40px;
+                line-height: 40px;
+                width: 180px;
+                font-size: 14px;
+            }  
+            @media (max-width: 600px){
+                margin-left: 12vw;
+                height: 30px;
+                width: 120px;
+                line-height: 30px;
+                font-size: 10px;
+            }
+
+            &:hover{
+                cursor: pointer;
+                border: 2px solid;
+                box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+
+    .gatsby-image-wrapper{
+        width: 50%;
+        height: 100%;
+
+        @media (max-width: 900px){
+            width: 70%;
+            height: 60%;
+        }
+        @media (max-width: 600px){
+            width: 85%;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            margin: auto;
+            padding-left: 2vw;
+        }
+    }
+}

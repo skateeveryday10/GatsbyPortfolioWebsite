@@ -33,6 +33,10 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 30px;
 
+        @media (max-width: 768px) {
+            gap: 15px;
+        }
+
         div{
             width: 100%;
 
